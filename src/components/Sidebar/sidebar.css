@@ -1,0 +1,147 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  background: white;
+  border-right: 1px solid #dce1e5;
+}
+
+.sidebar-header {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  background: #f7f9fa;
+  border-bottom: 1px solid #e4e7ea;
+}
+
+.sidebar-title {
+  display: grid;
+  flex: 1;
+}
+
+.sidebar-title span {
+  font-size: 12px;
+  color: #7a838c;
+}
+
+.avatar {
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #dff7e8;
+  color: #15803d;
+  font-weight: 800;
+}
+
+.avatar.large {
+  width: 42px;
+  height: 42px;
+  flex-basis: 42px;
+}
+
+.icon-btn {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: #66717b;
+}
+
+.icon-btn:hover {
+  background: #e9edef;
+  color: #111827;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 10px 12px;
+  padding: 0 12px;
+  height: 40px;
+  border-radius: 10px;
+  background: #f0f2f5;
+  color: #66717b;
+}
+
+.search-box input {
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+  padding: 0;
+}
+
+.chat-list {
+  overflow: auto;
+  flex: 1;
+}
+
+.chat-item {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 0;
+  border-bottom: 1px solid #f0f1f2;
+  text-align: left;
+  background: white;
+}
+
+.chat-item:hover,
+.chat-item.active {
+  background: #f0f2f5;
+}
+
+.chat-item-content {
+  min-width: 0;
+  flex: 1;
+}
+
+.chat-item-top {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.chat-item-top strong,
+.chat-preview {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.chat-time {
+  font-size: 11px;
+  color: #8b949e;
+}
+
+.chat-preview {
+  margin-top: 4px;
+  color: #7b858e;
+  font-size: 13px;
+}
+
+.empty-sidebar {
+  padding: 50px 24px;
+  text-align: center;
+  color: #87919a;
+}
+
+.empty-sidebar p {
+  margin: 10px 0 8px;
+}
+
+@media (max-width: 760px) {
+  .sidebar {
+    display: none;
+  }
+}
